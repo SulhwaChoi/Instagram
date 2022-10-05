@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 body{
     width: 100%;
@@ -11,43 +11,40 @@ body{
 .wrap{
     display: grid;
     height: 100vh;
-    grid-template-rows: 5fr 1fr 0.5fr;
+    grid-template-rows: 4.5fr 1.5fr;
     justify-content: center;
 }
-.content{
+.container{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding-top: 10%;
+    margin-bottom: 30px;
 }
 .main-box{
     display: grid;
-    grid-template-columns: 2fr 1.8fr;
+    align-items: end;
+    grid-template-columns: 2fr 1.7fr;
     width: 850px;
 }
 .img-box{
-    display: flex;
+    display: grid;
+    height: 80%;
     background-image: url("/image/insta.png");
-    background-size:95%;
-    background-position: right;
+    background-size:contain;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 .login-box{
     display: grid;
-    height: 80%;
-    grid-template-rows: 5fr 1.1fr 1.5fr;
-    padding: 50px 5px 30px 30px;
-}
-.main, .join  {
-    border: 1px solid lightgray;
-    margin-top: 10px;
-    background-color: white;
+    height: 74%;
+    grid-template-rows: 5fr 2.7fr 1.5fr;
+    padding: 0px 30px 10px 10px;
 }
 .main{
     display: grid;
-    margin-top: 50px;
-    grid-template-rows: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.8fr;
     padding: 0px 40px 20px 35px;
+    border: 1px solid lightgray;
+    background-color: white;
 }
 p{
     all: unset; 
@@ -57,7 +54,7 @@ p{
     font-size: 40px;
     justify-content: center;
     align-items: center;
-    font-family: Lobster;
+    font-family: 'Lobster Two', cursive;
 }
 .login{
     display: grid;
@@ -83,7 +80,11 @@ input{
     border: 0;
     font-weight: 600;
 }
-
+.join  {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    background-color: white;
+}
 .join, .download{
     display: flex;
     justify-content: center;
@@ -157,23 +158,31 @@ input{
 }
 .bt-content{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 .footer{
-    display: flex;
+    display: grid;
     color: gray;
-    flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
-    justify-content: center;
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     max-width: 850px;
-    word-spacing: 20px;
+    justify-content: center;
+}
+.menu>a{
+    text-decoration: none;
+    color: gray;
+    line-height: 30px;
+    margin-right: 20px;
 }
 .copyright{
     display: flex;
-    font-size: 13px;
+    justify-content: center;
+    margin-top: 20px;
 }
 

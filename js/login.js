@@ -1,6 +1,6 @@
-const id=document.getElementById("user");
-const pwd=document.getElementById("password");
-const loginBtn = document.getElementById("login-btn");
+const id=document.getElementById("user"),
+    pwd=document.getElementById("password"),
+    loginBtn = document.getElementById("login-btn");
 
 //아이디,비밀번호 둘다 작성 시 로그인 버튼 활성화 (블루컬러)
 function button()   {
