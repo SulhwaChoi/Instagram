@@ -159,6 +159,7 @@ section{
     display: grid;
     gap: 15px;
     padding-left: 15px;
+    padding-bottom: 50px;
 }
 .story{
     border: 1px solid #dbdbdb;
